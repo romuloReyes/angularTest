@@ -1,0 +1,13 @@
+<h1>dbz main page works!</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <app-dbz-list [characterList]="characters" (deleteCharacterByIndex)="onDeleteCharacter($event)"></app-dbz-list>
+  </div>
+
+  <div class="col">
+    <app-dbz-form (onNewCharacter)="onNewCharacter($event)"></app-dbz-form>
+  </div>
+  <!-- {{characters | json}} -->
+</div>
+
