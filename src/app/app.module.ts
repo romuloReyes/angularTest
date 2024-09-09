@@ -7,18 +7,20 @@ import { HeroesModule } from './heroes/heros.module';
 import { AppComponent } from './app.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { BorradorComponent } from './borrador/borrador.component';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PruebaComponent,
-    BorradorComponent
+    BorradorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CounterModule,
     HeroesModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
