@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PruebaComponent } from './prueba/prueba.component';
 import { BorradorComponent } from './borrador/borrador.component';
 import { DbzModule } from './dbz/dbz.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { DbzModule } from './dbz/dbz.module';
     HeroesModule,
     DbzModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
